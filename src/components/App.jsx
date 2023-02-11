@@ -1,16 +1,13 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+import Phonebook from 'components/Phonebook/Phonebook.jsx';
+import React from 'react';
+class App extends React.Component {
+  static defaultProps = {
+    initialValue: 0,
+  };
+
+  state = {
+    good: this.props.initialValue,
+    bad: this.props.initialValue,
+    neutral: this.props.initialValue,
+  };
+}
