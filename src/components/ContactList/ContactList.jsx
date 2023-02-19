@@ -2,13 +2,11 @@ import React from 'react';
 import css from './ContactList.module.css';
 import PropTypes from 'prop-types';
 const ContactList = ({ contacts }) => {
-  contacts.map(({ name, number, id }) => {
-    return (
-      <li className={css.contacts_list} key={id}>
-        {name}: {number}
-      </li>
-    );
-  });
+  return contacts.map(({ name, number, id }) => (
+    <li className={css.contacts_item} key={id}>
+      {name}: {number}
+    </li>
+  ));
 };
 
 ContactList.propTypes = {

@@ -4,6 +4,10 @@
   margin-left: 20px;
   color: rgb(86, 170, 142);
 }
-.contact_list {
-  list-style-type: none;
+
+.contacts_item {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  list-style: none;
+  color: rgb(10, 151, 104);
 }
